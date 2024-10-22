@@ -1522,7 +1522,7 @@ imgui.OnFrame(
 					imgui.Separator()
 					imgui.CenterText(u8'Полноценная замена окна редактирования обьявлений с полезными функциями!')
 					if imgui.CenterButton(u8'Настроить окно редактирования обьявлений под свои предпочтения') then
-						sampAddChatMessage('[SMI Helper] {ffffff}Данная фукция доступна только в платной версии 2.0!', message_color)
+						sampAddChatMessage('[SMI Helper] {ffffff}К сожалению, данная фукция доступна только в платной версии 2.0!', message_color)
 						--imgui.OpenPopup(fa.PEN_TO_SQUARE .. u8' Редактирование обьявлений')
 					end
 					if imgui.BeginPopupModal(fa.PEN_TO_SQUARE .. u8' Редактирование обьявлений', _, imgui.WindowFlags.NoCollapse + imgui.WindowFlags.NoResize  ) then
@@ -1608,7 +1608,7 @@ imgui.OnFrame(
 							-- sampAddChatMessage('[SMI Helper] {ffffff}ОБЯЗАТЕЛЬНО уточните можно ли использовать это на вашем сервере.', message_color)
 							-- sampAddChatMessage('[SMI Helper] {ffffff}В ином случае отключите данную функцию, дабы вас не забанили.', message_color)
 							-- save_settings()
-							sampAddChatMessage('[SMI Helper] {ffffff}Данная фукция доступна только в платной версии 2.0!', message_color)
+							sampAddChatMessage('[SMI Helper] {ffffff}К сожалению, данная фукция доступна только в платной версии 2.0!', message_color)
 						end
 					end
 					imgui.Columns(1)
@@ -2027,12 +2027,11 @@ imgui.OnFrame(
 				end
 				imgui.EndTabItem()
 			end
-			if imgui.BeginTabItem(fa.MICROPHONE_LINES ..u8' Эфиры и интервью') then 
-				imgui.CenterText(u8('Функционал реализован в платной версии 2.0'))
-				imgui.CenterText(u8('Получить её можно в нашем Discord/Telegram (@mtgmods)'))
+			if imgui.BeginTabItem(fa.MICROPHONE_LINES ..u8' Эфиры (МП и т.д.)') then 
+				imgui.CenterText(u8('К сожалению, данная версия упрощает только редакт обьявлений!'))
+				imgui.CenterText(u8('Вы можете создать свои команды-бинды в настройках команд'))
 				imgui.Separator()
-				imgui.CenterText(u8('Данная FREE версия упрощает только редакт обьявлений!'))
-				imgui.CenterText(u8('Но вы так-же можете создать свои команды-бинды в настройках команд'))
+				imgui.CenterText(u8('Функционал эфиров реализован в версии 2.0'))
 			imgui.EndTabItem()
 			end
 			if imgui.BeginTabItem(fa.FILE_PEN..u8' Заметки') then 
@@ -2167,8 +2166,8 @@ imgui.OnFrame(
 				imgui.Separator()
 				imgui.Text(fa.GLOBE..u8" Тема хелпера на форуме BlastHack:")
 				imgui.SameLine()
-				if imgui.SmallButton(u8'https://www.blast.hk/threads/223064/') then
-					openLink('https://www.blast.hk/threads/223064/')
+				if imgui.SmallButton(u8'будет позже') then
+					--openLink('https://www.blast.hk/threads/223064/')
 				end
 				imgui.Separator()
 				imgui.Text(fa.HAND_HOLDING_DOLLAR .. u8" Поддержать разработчика донатом:")
