@@ -1300,7 +1300,7 @@ function sampev.onShowDialog(dialogid, style, title, button1, button2, text)
 					sampSendDialogResponse(dialogid, 1, 0, ad.my_text)
 					exits = true
 				else
-					imgui.StrCopy(input_edit_text, u8(ad.my_text))
+					--imgui.StrCopy(input_edit_text, u8(ad.my_text))
 				end
 				break
 			end
