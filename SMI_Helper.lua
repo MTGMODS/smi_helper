@@ -2166,8 +2166,8 @@ imgui.OnFrame(
 				imgui.Separator()
 				imgui.Text(fa.GLOBE..u8" Тема хелпера на форуме BlastHack:")
 				imgui.SameLine()
-				if imgui.SmallButton(u8'будет позже') then
-					--openLink('https://www.blast.hk/threads/223064/')
+				if imgui.SmallButton(u8'https://www.blast.hk/threads/223090/') then
+					openLink('https://www.blast.hk/threads/223090/')
 				end
 				imgui.Separator()
 				imgui.Text(fa.HAND_HOLDING_DOLLAR .. u8" Поддержать разработчика донатом:")
